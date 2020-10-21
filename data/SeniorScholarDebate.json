@@ -1,0 +1,967 @@
+[
+  {
+    "Event": "DEBATE",
+    "Points": 1809,
+    "ScholarID": "310X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1809,
+    "ScholarID": "309Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1714,
+    "ScholarID": "324Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1714,
+    "ScholarID": "303X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1714,
+    "ScholarID": "309Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1714,
+    "ScholarID": "318Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1714,
+    "ScholarID": "308X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1714,
+    "ScholarID": "310Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1714,
+    "ScholarID": "327Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1619,
+    "ScholarID": "324X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1619,
+    "ScholarID": "303Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1619,
+    "ScholarID": "310Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1619,
+    "ScholarID": "315Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1619,
+    "ScholarID": "313Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1619,
+    "ScholarID": "318Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1619,
+    "ScholarID": "309Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1619,
+    "ScholarID": "305Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1619,
+    "ScholarID": "327X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "317Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "317Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "309Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "325Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "302Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "315Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "304Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "300Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "300X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "313X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "318Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "326Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "318X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "318Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "327X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "301Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "313Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "302Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1524,
+    "ScholarID": "306X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "324Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "324Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "325Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "302X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "320Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "302X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "301X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "303Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "318X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "309X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "326X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "310X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "300X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "313Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1429,
+    "ScholarID": "305Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "324X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "309X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "302Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "304X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "318X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "303X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "303Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "312X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "328Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "301X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "301Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "313X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "302X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "303Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1333,
+    "ScholarID": "326X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "327Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "326X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "308Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "308Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "325X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "311Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "314Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "305Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "320X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "313Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "302Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "302Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "315Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "301Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "310X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "320Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "305Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "327Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "314Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "325Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "309Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "303Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "303X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1238,
+    "ScholarID": "306Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "303Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "317X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "312X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "311X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "301Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "310Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "305X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "304X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "317Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "308Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "327X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "312Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "308Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "310Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "318Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "325X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "320X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "309Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1143,
+    "ScholarID": "326Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "300Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "313X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "314Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "315X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "311X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "312Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "312X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "304Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "304Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "328Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "308Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "304X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "304Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "300Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "320Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "315Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 1048,
+    "ScholarID": "306Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "324Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "312Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "326Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "308X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "328Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "318Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "301X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "305X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "313Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "314Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "315Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "301Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "311Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "312Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "320X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "317X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "325Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "304Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "300Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "314X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "314Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 952,
+    "ScholarID": "315Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "327Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "312Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "304Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "301Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "314Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "305Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "314X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "328Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "328X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "300Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "300Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "300X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "308X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "327X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "305X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "309X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "315X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "306Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "306Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "306C"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 857,
+    "ScholarID": "306B"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 762,
+    "ScholarID": "311Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 762,
+    "ScholarID": "328X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 762,
+    "ScholarID": "308Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 762,
+    "ScholarID": "317Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 667,
+    "ScholarID": "310Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 667,
+    "ScholarID": "327X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 667,
+    "ScholarID": "315X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 667,
+    "ScholarID": "328Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 667,
+    "ScholarID": "325X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 667,
+    "ScholarID": "325X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 667,
+    "ScholarID": "311X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 667,
+    "ScholarID": "328X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 667,
+    "ScholarID": "317X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 667,
+    "ScholarID": "306X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 667,
+    "ScholarID": "306A"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 571,
+    "ScholarID": "314X"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 571,
+    "ScholarID": "311Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 571,
+    "ScholarID": "310Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 571,
+    "ScholarID": "311Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 571,
+    "ScholarID": "311Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 571,
+    "ScholarID": "312Z"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 571,
+    "ScholarID": "305Y"
+  },
+  {
+    "Event": "DEBATE",
+    "Points": 0,
+    "ScholarID": "326X"
+  }
+]

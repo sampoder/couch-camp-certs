@@ -1,0 +1,7 @@
+{
+  "public": true,
+  "github": { "silent": true },
+  "rewrites": [
+    { "source": "/schedule", "destination": "https://cloud-5r403iznp.vercel.app/cc2_schedule.pdf" }
+  ]
+}
