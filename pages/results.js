@@ -788,11 +788,4 @@ const Home = (props) => (
   </>
 );
 
-export async function getStaticProps() {
-  console.log(juniorNames["123"]);
-  return {
-    props: {},
-  };
-}
-
 export default Home;
