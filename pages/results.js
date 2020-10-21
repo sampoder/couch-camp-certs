@@ -369,7 +369,7 @@ let juniorScholarChallengeScoresProcessed = orderBy(
       ],
   }));
 
-  juniorScholarChallengeScoresProcessed.forEach(numberCorrect);
+juniorScholarChallengeScoresProcessed.forEach(numberCorrect);
 
 let seniorScholarChallengeScoresProcessed = orderBy(
   seniorScholarChallengeScores,
@@ -393,7 +393,7 @@ let seniorScholarChallengeScoresProcessed = orderBy(
       ],
   }));
 
-  seniorScholarChallengeScoresProcessed.forEach(numberCorrect);
+seniorScholarChallengeScoresProcessed.forEach(numberCorrect);
 
 let juniorScholarOverallScoresProcessed = orderBy(
   juniorScholarOverallScores,
@@ -417,7 +417,7 @@ let juniorScholarOverallScoresProcessed = orderBy(
       ],
   }));
 
-  juniorScholarOverallScoresProcessed.forEach(numberCorrect);
+juniorScholarOverallScoresProcessed.forEach(numberCorrect);
 
 let seniorScholarOverallScoresProcessed = orderBy(
   seniorScholarOverallScores,
@@ -441,7 +441,7 @@ let seniorScholarOverallScoresProcessed = orderBy(
       ],
   }));
 
-  seniorScholarOverallScoresProcessed.forEach(numberCorrect);
+seniorScholarOverallScoresProcessed.forEach(numberCorrect);
 
 const Meta = ({ name = "Couch Camp 2", title = "Results" }) => (
   <Head>
@@ -592,7 +592,10 @@ const Home = (props) => (
         <p>
           <strong>Senior Team Bowl</strong>
         </p>
-        <p>Data Unavailable</p>
+        <p>
+          Data unavailable. We need Elijah to send this over. The previous one
+          was a duplicate of the Junior bowl.
+        </p>
       </Grid>
     </Grid.Container>
     <Grid.Container gap={2} justify="center">
