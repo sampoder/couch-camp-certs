@@ -759,6 +759,129 @@ export async function getServerSideProps(context) {
         );
       }
     }
+  } else {
+    for (x in seniorTeamChallengeScoresProcessed) {
+      if (
+        seniorTeamChallengeScoresProcessed[x]["id"] ===
+        context.params.slug.slice(0, 3)
+      ) {
+        teamChallengeRank = seniorTeamChallengeScoresProcessed[x]["rank"];
+        addAward(
+          teamChallengeRank,
+          seniorTeamChallengeScoresProcessed,
+          "Team",
+          "Writing"
+        );
+      }
+    }
+    for (x in seniorTeamWritingScoresProcessed) {
+      if (
+        seniorTeamWritingScoresProcessed[x]["id"] ===
+        context.params.slug.slice(0, 3)
+      ) {
+        teamWritingRank = seniorTeamWritingScoresProcessed[x]["rank"];
+        addAward(
+          teamWritingRank,
+          seniorTeamWritingScoresProcessed,
+          "Team",
+          "Writing"
+        );
+      }
+    }
+    for (x in seniorTeamDebateScoresProcessed) {
+      if (
+        seniorTeamDebateScoresProcessed[x]["id"] ===
+        context.params.slug.slice(0, 3)
+      ) {
+        teamDebateRank = seniorTeamDebateScoresProcessed[x]["rank"];
+        addAward(
+          teamDebateRank,
+          seniorTeamDebateScoresProcessed,
+          "Team",
+          "Debate"
+        );
+      }
+    }
+    for (x in seniorTeamBowlScoresProcessed) {
+      if (
+        seniorTeamBowlScoresProcessed[x]["id"] ===
+        context.params.slug.slice(0, 3)
+      ) {
+        teamBowlRank = seniorTeamBowlScoresProcessed[x]["rank"];
+        addAward(teamBowlRank, seniorTeamBowlScoresProcessed, "Team", "Bowl");
+      }
+    }
+    for (x in seniorTeamOverallScoresProcessed) {
+      if (
+        seniorTeamOverallScoresProcessed[x]["id"] ===
+        context.params.slug.slice(0, 3)
+      ) {
+        teamOverallRank = seniorTeamOverallScoresProcessed[x]["rank"];
+        addAward(
+          teamOverallRank,
+          seniorTeamOverallScoresProcessed,
+          "Team",
+          "Overall"
+        );
+      }
+    }
+    for (x in seniorScholarChallengeScoresProcessed) {
+      if (
+        seniorScholarChallengeScoresProcessed[x]["id"] ===
+        context.params.slug.slice(0, 4)
+      ) {
+        individualChallengeRank =
+          seniorScholarChallengeScoresProcessed[x]["rank"];
+        addAward(
+          individualChallengeRank,
+          seniorScholarChallengeScoresProcessed,
+          "Individual",
+          "Challenge"
+        );
+      }
+    }
+    for (x in seniorScholarWritingScoresProcessed) {
+      if (
+        seniorScholarWritingScoresProcessed[x]["id"] ===
+        context.params.slug.slice(0, 4)
+      ) {
+        individualWritingRank = seniorScholarWritingScoresProcessed[x]["rank"];
+        addAward(
+          individualWritingRank,
+          seniorScholarWritingScoresProcessed,
+          "Individual",
+          "Writing"
+        );
+      }
+    }
+    for (x in seniorScholarDebateScoresProcessed) {
+      if (
+        seniorScholarDebateScoresProcessed[x]["id"] ===
+        context.params.slug.slice(0, 4)
+      ) {
+        individualDebateRank = seniorScholarDebateScoresProcessed[x]["rank"];
+        addAward(
+          individualDebateRank,
+          seniorScholarDebateScoresProcessed,
+          "Individual",
+          "Debate"
+        );
+      }
+    }
+    for (x in seniorScholarOverallScoresProcessed) {
+      if (
+        seniorScholarOverallScoresProcessed[x]["id"] ===
+        context.params.slug.slice(0, 4)
+      ) {
+        individualOverallRank = seniorScholarOverallScoresProcessed[x]["rank"];
+        addAward(
+          individualOverallRank,
+          seniorScholarOverallScoresProcessed,
+          "Individual",
+          "Overall"
+        );
+      }
+    }
   }
 
   console.log(awards);
