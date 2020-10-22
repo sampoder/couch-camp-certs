@@ -6,28 +6,8 @@
   },
   {
     "Event": "DEBATE",
-    "Points": 2000,
-    "ScholarID": "112C"
-  },
-  {
-    "Event": "DEBATE",
     "Points": 1905,
     "ScholarID": "112B"
-  },
-  {
-    "Event": "DEBATE",
-    "Points": 1905,
-    "ScholarID": "112B"
-  },
-  {
-    "Event": "DEBATE",
-    "Points": 1905,
-    "ScholarID": "114C"
-  },
-  {
-    "Event": "DEBATE",
-    "Points": 1905,
-    "ScholarID": "114B"
   },
   {
     "Event": "DEBATE",
@@ -57,32 +37,7 @@
   {
     "Event": "DEBATE",
     "Points": 1905,
-    "ScholarID": "101A"
-  },
-  {
-    "Event": "DEBATE",
-    "Points": 1905,
-    "ScholarID": "101C"
-  },
-  {
-    "Event": "DEBATE",
-    "Points": 1905,
-    "ScholarID": "101B"
-  },
-  {
-    "Event": "DEBATE",
-    "Points": 1905,
     "ScholarID": "112B"
-  },
-  {
-    "Event": "DEBATE",
-    "Points": 1905,
-    "ScholarID": "112B"
-  },
-  {
-    "Event": "DEBATE",
-    "Points": 1809,
-    "ScholarID": "104A"
   },
   {
     "Event": "DEBATE",
@@ -97,16 +52,6 @@
   {
     "Event": "DEBATE",
     "Points": 1809,
-    "ScholarID": "112A"
-  },
-  {
-    "Event": "DEBATE",
-    "Points": 1809,
-    "ScholarID": "104B"
-  },
-  {
-    "Event": "DEBATE",
-    "Points": 1809,
     "ScholarID": "104B"
   },
   {
@@ -117,22 +62,7 @@
   {
     "Event": "DEBATE",
     "Points": 1714,
-    "ScholarID": "112C"
-  },
-  {
-    "Event": "DEBATE",
-    "Points": 1714,
     "ScholarID": "104B"
-  },
-  {
-    "Event": "DEBATE",
-    "Points": 1714,
-    "ScholarID": "104B"
-  },
-  {
-    "Event": "DEBATE",
-    "Points": 1619,
-    "ScholarID": "116B"
   },
   {
     "Event": "DEBATE",

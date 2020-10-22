@@ -304,7 +304,7 @@ let juniorScholarDebateScoresProcessed = orderBy(
   "Points",
   "desc"
 )
-  .slice(0, 10)
+  .slice(0, 11)
   .map(({ Points, ScholarID }, index) => ({
     points: Points,
     id: ScholarID,
