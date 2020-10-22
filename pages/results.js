@@ -68,7 +68,7 @@ function uniq(a) {
 }
 
 let juniorTeamChallengeScoresProcessed = orderBy(
-  uniqBy(juniorTeamChallengeScores, 'TeamID'),
+  uniqBy(juniorTeamChallengeScores, "TeamID"),
   "Points",
   "desc"
 )
@@ -88,7 +88,7 @@ let juniorTeamChallengeScoresProcessed = orderBy(
 juniorTeamChallengeScoresProcessed.forEach(numberCorrect);
 
 let seniorTeamChallengeScoresProcessed = orderBy(
-  uniqBy(seniorTeamChallengeScores, 'TeamID'),
+  uniqBy(seniorTeamChallengeScores, "TeamID"),
   "Points",
   "desc"
 )
@@ -108,7 +108,7 @@ let seniorTeamChallengeScoresProcessed = orderBy(
 seniorTeamChallengeScoresProcessed.forEach(numberCorrect);
 
 let juniorTeamWritingScoresProcessed = orderBy(
-  uniqBy(juniorTeamWritingScores, 'TeamID'),
+  uniqBy(juniorTeamWritingScores, "TeamID"),
   "Points",
   "desc"
 )
@@ -128,7 +128,7 @@ let juniorTeamWritingScoresProcessed = orderBy(
 juniorTeamWritingScoresProcessed.forEach(numberCorrect);
 
 let seniorTeamWritingScoresProcessed = orderBy(
-  uniqBy(seniorTeamWritingScores, 'TeamID'),
+  uniqBy(seniorTeamWritingScores, "TeamID"),
   "Points",
   "desc"
 )
@@ -148,7 +148,7 @@ let seniorTeamWritingScoresProcessed = orderBy(
 seniorTeamWritingScoresProcessed.forEach(numberCorrect);
 
 let juniorTeamDebateScoresProcessed = orderBy(
-  uniqBy(juniorTeamDebateScores, 'TeamID'),
+  uniqBy(juniorTeamDebateScores, "TeamID"),
   "Points",
   "desc"
 )
@@ -168,7 +168,7 @@ let juniorTeamDebateScoresProcessed = orderBy(
 juniorTeamDebateScoresProcessed.forEach(numberCorrect);
 
 let seniorTeamDebateScoresProcessed = orderBy(
-  uniqBy(seniorTeamDebateScores, 'TeamID'),
+  uniqBy(seniorTeamDebateScores, "TeamID"),
   "Points",
   "desc"
 )
@@ -188,7 +188,7 @@ let seniorTeamDebateScoresProcessed = orderBy(
 seniorTeamDebateScoresProcessed.forEach(numberCorrect);
 
 let juniorTeamBowlScoresProcessed = orderBy(
-  uniqBy(juniorTeamBowlScores, 'TeamID'),
+  uniqBy(juniorTeamBowlScores, "TeamID"),
   "Points",
   "desc"
 )
@@ -208,7 +208,7 @@ let juniorTeamBowlScoresProcessed = orderBy(
 juniorTeamBowlScoresProcessed.forEach(numberCorrect);
 
 let seniorTeamBowlScoresProcessed = orderBy(
-  uniqBy(seniorTeamBowlScores, 'TeamID'),
+  uniqBy(seniorTeamBowlScores, "TeamID"),
   "Points",
   "desc"
 )
@@ -217,18 +217,18 @@ let seniorTeamBowlScoresProcessed = orderBy(
     points: Points,
     id: TeamID,
     rank: index + 1,
-    //    members:
-    //      seniorNames[TeamID]["member1"] +
-    //      ", " +
-    //      seniorNames[TeamID]["member2"] +
-    //      ", " +
-    //      seniorNames[TeamID]["member3"],
+    members:
+      seniorNames[TeamID]["member1"] +
+      ", " +
+      seniorNames[TeamID]["member2"] +
+      ", " +
+      seniorNames[TeamID]["member3"],
   }));
 
 seniorTeamBowlScoresProcessed.forEach(numberCorrect);
 
 let juniorTeamOverallScoresProcessed = orderBy(
-  uniqBy(juniorTeamOverallScores, 'TeamID'),
+  uniqBy(juniorTeamOverallScores, "TeamID"),
   "Points",
   "desc"
 )
@@ -248,7 +248,7 @@ let juniorTeamOverallScoresProcessed = orderBy(
 juniorTeamOverallScoresProcessed.forEach(numberCorrect);
 
 let seniorTeamOverallScoresProcessed = orderBy(
-  uniqBy(seniorTeamOverallScores, 'TeamID'),
+  uniqBy(seniorTeamOverallScores, "TeamID"),
   "Points",
   "desc"
 )
@@ -268,7 +268,7 @@ let seniorTeamOverallScoresProcessed = orderBy(
 seniorTeamOverallScoresProcessed.forEach(numberCorrect);
 
 let juniorScholarWritingScoresProcessed = orderBy(
-  uniqBy(juniorScholarWritingScores, 'ScholarID'),
+  uniqBy(juniorScholarWritingScores, "ScholarID"),
   "Points",
   "desc"
 )
@@ -292,7 +292,7 @@ let juniorScholarWritingScoresProcessed = orderBy(
 juniorScholarWritingScoresProcessed.forEach(numberCorrect);
 
 let seniorScholarWritingScoresProcessed = orderBy(
-  uniqBy(seniorScholarWritingScores, 'ScholarID'),
+  uniqBy(seniorScholarWritingScores, "ScholarID"),
   "Points",
   "desc"
 )
@@ -316,7 +316,7 @@ let seniorScholarWritingScoresProcessed = orderBy(
 seniorScholarWritingScoresProcessed.forEach(numberCorrect);
 
 let juniorScholarDebateScoresProcessed = orderBy(
-  uniqBy(juniorScholarDebateScores, 'ScholarID'),
+  uniqBy(juniorScholarDebateScores, "ScholarID"),
   "Points",
   "desc"
 )
@@ -340,7 +340,7 @@ let juniorScholarDebateScoresProcessed = orderBy(
 juniorScholarDebateScoresProcessed.forEach(numberCorrect);
 
 let seniorScholarDebateScoresProcessed = orderBy(
-  uniqBy(seniorScholarDebateScores, 'ScholarID'),
+  uniqBy(seniorScholarDebateScores, "ScholarID"),
   "Points",
   "desc"
 )
@@ -364,7 +364,7 @@ let seniorScholarDebateScoresProcessed = orderBy(
 seniorScholarDebateScoresProcessed.forEach(numberCorrect);
 
 let juniorScholarChallengeScoresProcessed = orderBy(
-  uniqBy(juniorScholarChallengeScores, 'ScholarID'),
+  uniqBy(juniorScholarChallengeScores, "ScholarID"),
   "Points",
   "desc"
 )
@@ -388,7 +388,7 @@ let juniorScholarChallengeScoresProcessed = orderBy(
 juniorScholarChallengeScoresProcessed.forEach(numberCorrect);
 
 let seniorScholarChallengeScoresProcessed = orderBy(
-  uniqBy(seniorScholarChallengeScores, 'ScholarID'),
+  uniqBy(seniorScholarChallengeScores, "ScholarID"),
   "Points",
   "desc"
 )
@@ -412,7 +412,7 @@ let seniorScholarChallengeScoresProcessed = orderBy(
 seniorScholarChallengeScoresProcessed.forEach(numberCorrect);
 
 let juniorScholarOverallScoresProcessed = orderBy(
-  uniqBy(juniorScholarOverallScores, 'ScholarID'),
+  uniqBy(juniorScholarOverallScores, "ScholarID"),
   "Points",
   "desc"
 )
@@ -436,7 +436,7 @@ let juniorScholarOverallScoresProcessed = orderBy(
 juniorScholarOverallScoresProcessed.forEach(numberCorrect);
 
 let seniorScholarOverallScoresProcessed = orderBy(
-  uniqBy(seniorScholarOverallScores, 'ScholarID'),
+  uniqBy(seniorScholarOverallScores, "ScholarID"),
   "Points",
   "desc"
 )
@@ -608,10 +608,12 @@ const Home = (props) => (
         <p>
           <strong>Senior Team Bowl</strong>
         </p>
-        <p>
-          Data unavailable. We need Elijah to send this over. The previous one
-          was a duplicate of the Junior bowl.
-        </p>
+        <Table data={seniorTeamBowlScoresProcessed}>
+          <Table.Column prop="rank" label="Rank" />
+          <Table.Column prop="id" label="Team ID" />
+          <Table.Column prop="members" label="Team Members" />
+          <Table.Column prop="points" label="Points" />
+        </Table>
       </Grid>
     </Grid.Container>
     <Grid.Container gap={2} justify="center">
