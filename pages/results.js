@@ -40,7 +40,7 @@ import juniorScholarOverallScores from "../data/JuniorScholarOverall.json";
 import seniorScholarOverallScores from "../data/SeniorScholarOverall.json";
 import juniorNames from "../data/juniors.json";
 import seniorNames from "../data/seniors.json";
-import { orderBy } from "lodash";
+import { orderBy, uniqBy } from "lodash";
 
 function numberCorrect(item, index, array) {
   if (index == 0) {
@@ -52,19 +52,23 @@ function numberCorrect(item, index, array) {
 }
 
 function uniq(a) {
-  var prims = {"boolean":{}, "number":{}, "string":{}}, objs = [];
-
-  return a.filter(function(item) {
-      var type = typeof item;
-      if(type in prims)
-          return prims[type].hasOwnProperty(item) ? false : (prims[type][item] = true);
-      else
-          return objs.indexOf(item) >= 0 ? false : objs.push(item);
-  });
+  const array = a;
+  const result = [];
+  const map = new Map();
+  for (const item of array) {
+    if (!map.has(item.id)) {
+      map.set(item.id, true); // set any value to Map
+      result.push({
+        id: item.id,
+        name: item.name,
+      });
+    }
+  }
+  return result;
 }
 
 let juniorTeamChallengeScoresProcessed = orderBy(
-  juniorTeamChallengeScores,
+  uniqBy(juniorTeamChallengeScores, 'TeamID'),
   "Points",
   "desc"
 )
@@ -84,7 +88,7 @@ let juniorTeamChallengeScoresProcessed = orderBy(
 juniorTeamChallengeScoresProcessed.forEach(numberCorrect);
 
 let seniorTeamChallengeScoresProcessed = orderBy(
-  seniorTeamChallengeScores,
+  uniqBy(seniorTeamChallengeScores, 'TeamID'),
   "Points",
   "desc"
 )
@@ -104,7 +108,7 @@ let seniorTeamChallengeScoresProcessed = orderBy(
 seniorTeamChallengeScoresProcessed.forEach(numberCorrect);
 
 let juniorTeamWritingScoresProcessed = orderBy(
-  juniorTeamWritingScores,
+  uniqBy(juniorTeamWritingScores, 'TeamID'),
   "Points",
   "desc"
 )
@@ -124,7 +128,7 @@ let juniorTeamWritingScoresProcessed = orderBy(
 juniorTeamWritingScoresProcessed.forEach(numberCorrect);
 
 let seniorTeamWritingScoresProcessed = orderBy(
-  seniorTeamWritingScores,
+  uniqBy(seniorTeamWritingScores, 'TeamID'),
   "Points",
   "desc"
 )
@@ -144,7 +148,7 @@ let seniorTeamWritingScoresProcessed = orderBy(
 seniorTeamWritingScoresProcessed.forEach(numberCorrect);
 
 let juniorTeamDebateScoresProcessed = orderBy(
-  juniorTeamDebateScores,
+  uniqBy(juniorTeamDebateScores, 'TeamID'),
   "Points",
   "desc"
 )
@@ -164,7 +168,7 @@ let juniorTeamDebateScoresProcessed = orderBy(
 juniorTeamDebateScoresProcessed.forEach(numberCorrect);
 
 let seniorTeamDebateScoresProcessed = orderBy(
-  seniorTeamDebateScores,
+  uniqBy(seniorTeamDebateScores, 'TeamID'),
   "Points",
   "desc"
 )
@@ -184,7 +188,7 @@ let seniorTeamDebateScoresProcessed = orderBy(
 seniorTeamDebateScoresProcessed.forEach(numberCorrect);
 
 let juniorTeamBowlScoresProcessed = orderBy(
-  juniorTeamBowlScores,
+  uniqBy(juniorTeamBowlScores, 'TeamID'),
   "Points",
   "desc"
 )
@@ -204,7 +208,7 @@ let juniorTeamBowlScoresProcessed = orderBy(
 juniorTeamBowlScoresProcessed.forEach(numberCorrect);
 
 let seniorTeamBowlScoresProcessed = orderBy(
-  seniorTeamBowlScores,
+  uniqBy(seniorTeamBowlScores, 'TeamID'),
   "Points",
   "desc"
 )
@@ -224,7 +228,7 @@ let seniorTeamBowlScoresProcessed = orderBy(
 seniorTeamBowlScoresProcessed.forEach(numberCorrect);
 
 let juniorTeamOverallScoresProcessed = orderBy(
-  juniorTeamOverallScores,
+  uniqBy(juniorTeamOverallScores, 'TeamID'),
   "Points",
   "desc"
 )
@@ -244,7 +248,7 @@ let juniorTeamOverallScoresProcessed = orderBy(
 juniorTeamOverallScoresProcessed.forEach(numberCorrect);
 
 let seniorTeamOverallScoresProcessed = orderBy(
-  seniorTeamOverallScores,
+  uniqBy(seniorTeamOverallScores, 'TeamID'),
   "Points",
   "desc"
 )
@@ -264,7 +268,7 @@ let seniorTeamOverallScoresProcessed = orderBy(
 seniorTeamOverallScoresProcessed.forEach(numberCorrect);
 
 let juniorScholarWritingScoresProcessed = orderBy(
-  juniorScholarWritingScores,
+  uniqBy(juniorScholarWritingScores, 'ScholarID'),
   "Points",
   "desc"
 )
@@ -288,7 +292,7 @@ let juniorScholarWritingScoresProcessed = orderBy(
 juniorScholarWritingScoresProcessed.forEach(numberCorrect);
 
 let seniorScholarWritingScoresProcessed = orderBy(
-  seniorScholarWritingScores,
+  uniqBy(seniorScholarWritingScores, 'ScholarID'),
   "Points",
   "desc"
 )
@@ -312,7 +316,7 @@ let seniorScholarWritingScoresProcessed = orderBy(
 seniorScholarWritingScoresProcessed.forEach(numberCorrect);
 
 let juniorScholarDebateScoresProcessed = orderBy(
-  juniorScholarDebateScores,
+  uniqBy(juniorScholarDebateScores, 'ScholarID'),
   "Points",
   "desc"
 )
@@ -336,7 +340,7 @@ let juniorScholarDebateScoresProcessed = orderBy(
 juniorScholarDebateScoresProcessed.forEach(numberCorrect);
 
 let seniorScholarDebateScoresProcessed = orderBy(
-  seniorScholarDebateScores,
+  uniqBy(seniorScholarDebateScores, 'ScholarID'),
   "Points",
   "desc"
 )
@@ -360,7 +364,7 @@ let seniorScholarDebateScoresProcessed = orderBy(
 seniorScholarDebateScoresProcessed.forEach(numberCorrect);
 
 let juniorScholarChallengeScoresProcessed = orderBy(
-  juniorScholarChallengeScores,
+  uniqBy(juniorScholarChallengeScores, 'ScholarID'),
   "Points",
   "desc"
 )
@@ -384,7 +388,7 @@ let juniorScholarChallengeScoresProcessed = orderBy(
 juniorScholarChallengeScoresProcessed.forEach(numberCorrect);
 
 let seniorScholarChallengeScoresProcessed = orderBy(
-  seniorScholarChallengeScores,
+  uniqBy(seniorScholarChallengeScores, 'ScholarID'),
   "Points",
   "desc"
 )
@@ -408,7 +412,7 @@ let seniorScholarChallengeScoresProcessed = orderBy(
 seniorScholarChallengeScoresProcessed.forEach(numberCorrect);
 
 let juniorScholarOverallScoresProcessed = orderBy(
-  juniorScholarOverallScores,
+  uniqBy(juniorScholarOverallScores, 'ScholarID'),
   "Points",
   "desc"
 )
@@ -432,7 +436,7 @@ let juniorScholarOverallScoresProcessed = orderBy(
 juniorScholarOverallScoresProcessed.forEach(numberCorrect);
 
 let seniorScholarOverallScoresProcessed = orderBy(
-  seniorScholarOverallScores,
+  uniqBy(seniorScholarOverallScores, 'ScholarID'),
   "Points",
   "desc"
 )
