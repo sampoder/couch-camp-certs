@@ -389,8 +389,11 @@ const awards1 = [
 ];
 
 const Home = (props, context) => (
-  <div style={{ minHeight: '100vh'}}>
+  <div style={{ minHeight: "100vh" }}>
     <Meta />
+    <Head>
+      <title>{props.id} - Couch Camp</title>
+    </Head>
     <div
       style={{
         overflow: "hidden",
@@ -457,14 +460,18 @@ const Home = (props, context) => (
         </Table>
       </Grid>
       <Grid xs={23} md={6} style={{ textAlign: "left" }}>
-        <p style={{ marginTop: "-0rem"}}>
+        <p style={{ marginTop: "-0rem" }}>
           <strong>Writing Feedback</strong>
         </p>
-        <p style={{ marginTop: "-0.5rem", height: '220px', overflow: 'scroll' }}>{props.feedback}</p>
+        <p
+          style={{ marginTop: "-0.5rem", height: "220px", overflow: "scroll" }}
+        >
+          {props.feedback}
+        </p>
       </Grid>
     </Grid.Container>
     <br />
-    <div style={{ position: 'absolute', bottom: '0', width: '100%'}}>
+    <div style={{ position: "absolute", bottom: "0", width: "100%" }}>
       <Divider y={5}>
         <User
           src="https://avansalpacaresources.weebly.com/uploads/1/1/1/7/111766893/editor/aarlogo-whiteborder.png?1581387864"
@@ -539,16 +546,14 @@ export async function getServerSideProps(context) {
         } ${event}`,
         type: `${type}`,
       });
-    }
-    else if (rank <= 5) {
+    } else if (rank <= 5) {
       awards.push({
         award: `🏅 ${ordinal(rank)} Place ${
           event == "Overall" ? "" : "in"
         } ${event}`,
         type: `${type}`,
       });
-    }
-    else if (rank <= 10) {
+    } else if (rank <= 10) {
       awards.push({
         award: `🏅 ${ordinal(rank)} Place ${
           event == "Overall" ? "" : "in"
