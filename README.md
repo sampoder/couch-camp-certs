@@ -1,7 +1,3 @@
-# 🏕 couch-camp-site
+# ⭐️ couch-camp-certs
 
-The website for Couch Camp v2, a unofficial virtual WSC round.
-
-Built with Next.js and GeistUI.
-
-[Learn more about Couch Camp](https://couch.camp)
+Collates scoring data into a simple user friendly interface and generates certificates.
