@@ -21,6 +21,355 @@ import {
 } from "@geist-ui/react";
 import LazyHero from "react-lazy-hero";
 import Meta from "../components/meta.js";
+import juniorTeamChallengeScores from "../data/JuniorTeamChallenge.json";
+import seniorTeamChallengeScores from "../data/SeniorTeamChallenge.json";
+import juniorTeamWritingScores from "../data/JuniorTeamWriting.json";
+import seniorTeamWritingScores from "../data/SeniorTeamWriting.json";
+import juniorTeamDebateScores from "../data/JuniorTeamDebate.json";
+import seniorTeamDebateScores from "../data/SeniorTeamDebate.json";
+import juniorTeamBowlScores from "../data/JuniorTeamBowl.json";
+import seniorTeamBowlScores from "../data/SeniorTeamBowl.json";
+import juniorTeamOverallScores from "../data/JuniorTeamOverall.json";
+import seniorTeamOverallScores from "../data/SeniorTeamOverall.json";
+import juniorScholarWritingScores from "../data/JuniorScholarWriting.json";
+import seniorScholarWritingScores from "../data/SeniorScholarWriting.json";
+import juniorScholarDebateScores from "../data/JuniorScholarDebate.json";
+import seniorScholarDebateScores from "../data/SeniorScholarDebate.json";
+import juniorScholarChallengeScores from "../data/JuniorScholarChallenge.json";
+import seniorScholarChallengeScores from "../data/SeniorScholarChallenge.json";
+import juniorScholarOverallScores from "../data/JuniorScholarOverall.json";
+import seniorScholarOverallScores from "../data/SeniorScholarOverall.json";
+import feedback from "../data/Feedback.json";
+import juniorNames from "../data/juniors.json";
+import seniorNames from "../data/seniors.json";
+import { orderBy } from "lodash";
+
+function numberCorrect(item, index, array) {
+  if (index == 0) {
+    return;
+  } else if (array[index - 1].points === array[index].points) {
+    array[index].rank = array[index - 1].rank;
+  }
+  return;
+}
+
+let juniorTeamChallengeScoresProcessed = orderBy(
+  juniorTeamChallengeScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000000)
+  .map(({ Points, TeamID }, index) => ({
+    points: Points,
+    id: TeamID,
+    rank: index + 1,
+  }));
+
+juniorTeamChallengeScoresProcessed.forEach(numberCorrect);
+
+let seniorTeamChallengeScoresProcessed = orderBy(
+  seniorTeamChallengeScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000000)
+  .map(({ Points, TeamID }, index) => ({
+    points: Points,
+    id: TeamID,
+    rank: index + 1,
+  }));
+
+seniorTeamChallengeScoresProcessed.forEach(numberCorrect);
+
+let juniorTeamWritingScoresProcessed = orderBy(
+  juniorTeamWritingScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000001)
+  .map(({ Points, TeamID }, index) => ({
+    points: Points,
+    id: TeamID,
+    rank: index + 1,
+  }));
+
+juniorTeamWritingScoresProcessed.forEach(numberCorrect);
+
+let seniorTeamWritingScoresProcessed = orderBy(
+  seniorTeamWritingScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000000)
+  .map(({ Points, TeamID }, index) => ({
+    points: Points,
+    id: TeamID,
+    rank: index + 1,
+  }));
+
+seniorTeamWritingScoresProcessed.forEach(numberCorrect);
+
+let juniorTeamDebateScoresProcessed = orderBy(
+  juniorTeamDebateScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000000)
+  .map(({ Points, TeamID }, index) => ({
+    points: Points,
+    id: TeamID,
+    rank: index + 1,
+  }));
+
+juniorTeamDebateScoresProcessed.forEach(numberCorrect);
+
+let seniorTeamDebateScoresProcessed = orderBy(
+  seniorTeamDebateScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000000)
+  .map(({ Points, TeamID }, index) => ({
+    points: Points,
+    id: TeamID,
+    rank: index + 1,
+  }));
+
+seniorTeamDebateScoresProcessed.forEach(numberCorrect);
+
+let juniorTeamBowlScoresProcessed = orderBy(
+  juniorTeamBowlScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000001)
+  .map(({ Points, TeamID }, index) => ({
+    points: Points,
+    id: TeamID,
+    rank: index + 1,
+  }));
+
+juniorTeamBowlScoresProcessed.forEach(numberCorrect);
+
+let seniorTeamBowlScoresProcessed = orderBy(
+  seniorTeamBowlScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000000)
+  .map(({ Points, TeamID }, index) => ({
+    points: Points,
+    id: TeamID,
+    rank: index + 1,
+    //    members:
+    //      seniorNames[TeamID]["member1"] +
+    //      ", " +
+    //      seniorNames[TeamID]["member2"] +
+    //      ", " +
+    //      seniorNames[TeamID]["member3"],
+  }));
+
+seniorTeamBowlScoresProcessed.forEach(numberCorrect);
+
+let juniorTeamOverallScoresProcessed = orderBy(
+  juniorTeamOverallScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000000)
+  .map(({ Points, TeamID }, index) => ({
+    points: Points,
+    id: TeamID,
+    rank: index + 1,
+  }));
+
+juniorTeamOverallScoresProcessed.forEach(numberCorrect);
+
+let seniorTeamOverallScoresProcessed = orderBy(
+  seniorTeamOverallScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000000)
+  .map(({ Points, TeamID }, index) => ({
+    points: Points,
+    id: TeamID,
+    rank: index + 1,
+  }));
+
+seniorTeamOverallScoresProcessed.forEach(numberCorrect);
+
+let juniorScholarWritingScoresProcessed = orderBy(
+  juniorScholarWritingScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000000)
+  .map(({ Points, ScholarID }, index) => ({
+    points: Points,
+    id: ScholarID,
+    rank: index + 1,
+    name:
+      juniorNames[ScholarID.slice(0, 3)][
+        `member${
+          ScholarID.includes("A") || ScholarID.includes("X")
+            ? "1"
+            : ScholarID.includes("B") || ScholarID.includes("Y")
+            ? "2"
+            : "3"
+        }`
+      ],
+  }));
+
+juniorScholarWritingScoresProcessed.forEach(numberCorrect);
+
+let seniorScholarWritingScoresProcessed = orderBy(
+  seniorScholarWritingScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000004)
+  .map(({ Points, ScholarID }, index) => ({
+    points: Points,
+    id: ScholarID,
+    rank: index + 1,
+    name:
+      seniorNames[ScholarID.slice(0, 3)][
+        `member${
+          ScholarID.includes("A") || ScholarID.includes("X")
+            ? "1"
+            : ScholarID.includes("B") || ScholarID.includes("Y")
+            ? "2"
+            : "3"
+        }`
+      ],
+  }));
+
+seniorScholarWritingScoresProcessed.forEach(numberCorrect);
+
+let juniorScholarDebateScoresProcessed = orderBy(
+  juniorScholarDebateScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000000)
+  .map(({ Points, ScholarID }, index) => ({
+    points: Points,
+    id: ScholarID,
+    rank: index + 1,
+    name:
+      juniorNames[ScholarID.slice(0, 3)][
+        `member${
+          ScholarID.includes("A") || ScholarID.includes("X")
+            ? "1"
+            : ScholarID.includes("B") || ScholarID.includes("Y")
+            ? "2"
+            : "3"
+        }`
+      ],
+  }));
+
+juniorScholarDebateScoresProcessed.forEach(numberCorrect);
+
+let seniorScholarDebateScoresProcessed = orderBy(
+  seniorScholarDebateScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000008)
+  .map(({ Points, ScholarID }, index) => ({
+    points: Points,
+    id: ScholarID,
+    rank: index + 1,
+    name:
+      seniorNames[ScholarID.slice(0, 3)][
+        `member${
+          ScholarID.includes("A") || ScholarID.includes("X")
+            ? "1"
+            : ScholarID.includes("B") || ScholarID.includes("Y")
+            ? "2"
+            : "3"
+        }`
+      ],
+  }));
+
+seniorScholarDebateScoresProcessed.forEach(numberCorrect);
+
+let juniorScholarChallengeScoresProcessed = orderBy(
+  juniorScholarChallengeScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000001)
+  .map(({ Points, ScholarID }, index) => ({
+    points: Points,
+    id: ScholarID,
+    rank: index + 1,
+    name:
+      juniorNames[ScholarID.slice(0, 3)][
+        `member${
+          ScholarID.includes("A") || ScholarID.includes("X")
+            ? "1"
+            : ScholarID.includes("B") || ScholarID.includes("Y")
+            ? "2"
+            : "3"
+        }`
+      ],
+  }));
+
+juniorScholarChallengeScoresProcessed.forEach(numberCorrect);
+
+let seniorScholarChallengeScoresProcessed = orderBy(
+  seniorScholarChallengeScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000001)
+  .map(({ Points, ScholarID }, index) => ({
+    points: Points,
+    id: ScholarID,
+    rank: index + 1,
+    name:
+      seniorNames[ScholarID.slice(0, 3)][
+        `member${
+          ScholarID.includes("A") || ScholarID.includes("X")
+            ? "1"
+            : ScholarID.includes("B") || ScholarID.includes("Y")
+            ? "2"
+            : "3"
+        }`
+      ],
+  }));
+
+seniorScholarChallengeScoresProcessed.forEach(numberCorrect);
+
+let juniorScholarOverallScoresProcessed = orderBy(
+  juniorScholarOverallScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000000)
+  .map(({ Points, ScholarID }, index) => ({
+    points: Points,
+    id: ScholarID,
+    rank: index + 1,
+  }));
+
+juniorScholarOverallScoresProcessed.forEach(numberCorrect);
+
+let seniorScholarOverallScoresProcessed = orderBy(
+  seniorScholarOverallScores,
+  "Points",
+  "desc"
+)
+  .slice(0, 1000000)
+  .map(({ Points, ScholarID }, index) => ({
+    points: Points,
+    id: ScholarID,
+    rank: index + 1,
+  }));
+
+seniorScholarOverallScoresProcessed.forEach(numberCorrect);
 
 const data = [
   { event: "Debate", description: "2222", type: "12" },
@@ -38,7 +387,7 @@ const awards = [
   { award: "1st Debate", type: <Tag type="success">Team</Tag> },
 ];
 
-const Home = (props) => (
+const Home = (props, context) => (
   <>
     <Meta />
     <div
@@ -61,11 +410,11 @@ const Home = (props) => (
             style={{
               color: "white",
               textShadow: "#DD5B39 4px 4px 0px",
-              fontSize: "5em",
+              fontSize: "4em",
             }}
             className="title"
           >
-            Sam Poder{" "}
+            {props.name}{" "}
             <span
               style={{
                 color: "white",
@@ -73,14 +422,18 @@ const Home = (props) => (
                 fontSize: "0.4em",
               }}
             >
-              141B (Junior Division)
+              {props.id} (
+              {props.id.slice(0, 3) > 300
+                ? "Senior Division"
+                : "Junior Division"}
+              )
             </span>
           </h1>
         </Grid>
         <Grid xs={23} md={3}>
           <img
             src="https://cloud-57pt0xtsf.vercel.app/0cclogo.png"
-            style={{ padding: "10px" }}
+            style={{ padding: "10px", height: "100px" }}
           />
         </Grid>
       </Grid.Container>
@@ -99,10 +452,10 @@ const Home = (props) => (
 
       <Grid xs={23} md={6} style={{ textAlign: "left" }}>
         <p>
-          <strong style={{color: 'white'}}>.</strong>
+          <strong style={{ color: "white" }}>.</strong>
         </p>
         <Table data={awards} className="secondary">
-        <Table.Column prop="award" label="Award" />
+          <Table.Column prop="award" label="Award" />
           <Table.Column prop="type" label="Type" />
         </Table>
       </Grid>
@@ -110,13 +463,7 @@ const Home = (props) => (
         <p>
           <strong>Writing Feedback</strong>
         </p>
-        <p style={{marginTop: '-0.5rem'}}>
-          magna etiam tempor orci eu lobortis elementum nibh tellus molestie
-          nunc non blandit massa enim nec dui nunc mattis enim ut tellus
-          elementum sagittis vitae et leo duis ut diam quam nulla porttitor
-          massa id neque aliquam vestibulum morbi blandit cursus risus at
-          ultrices mi tempus imperdiet nulla malesuada pellentesque
-        </p>
+        <p style={{ marginTop: "-0.5rem" }}>{props.feedback}</p>
       </Grid>
     </Grid.Container>
     <br />
@@ -134,14 +481,14 @@ const Home = (props) => (
         name="Champion Scholar Initiative"
       />
       <User
-         src="https://www.onepwaa.org/assets/img/onepwaa_13%20(1).png"
-         name="OnePwaa"
-       />
-       <User
-         src="https://yt3.ggpht.com/a/AATXAJxd11hjSuUwIGiHbZsKmHS3dm20QbHbSxA338_4iQ=s288-c-k-c0xffffffff-no-rj-mo"
-         name="Joaquin Revello"
-       />
-     </Divider>
+        src="https://www.onepwaa.org/assets/img/onepwaa_13%20(1).png"
+        name="OnePwaa"
+      />
+      <User
+        src="https://yt3.ggpht.com/a/AATXAJxd11hjSuUwIGiHbZsKmHS3dm20QbHbSxA338_4iQ=s288-c-k-c0xffffffff-no-rj-mo"
+        name="Joaquin Revello"
+      />
+    </Divider>
     <style jsx global>{`
       .caption {
         margin-top: 1rem;
@@ -171,8 +518,8 @@ const Home = (props) => (
       strong {
         font-size: 1.3em;
       }
-      .secondary thead{
-        display: none
+      .secondary thead {
+        display: none;
       }
       .secondary {
         border-top: 1px solid #eaeaea;
@@ -181,5 +528,113 @@ const Home = (props) => (
     `}</style>
   </>
 );
+
+export async function getServerSideProps(context) {
+  console.log(context.params);
+  let writingFeedback;
+  var name =
+    context.params.slug.slice(0, 3) > 300
+      ? seniorNames[context.params.slug.slice(0, 3)][
+          `member${
+            context.params.slug.includes("A") ||
+            context.params.slug.includes("X")
+              ? "1"
+              : context.params.slug.includes("B") ||
+                context.params.slug.includes("Y")
+              ? "2"
+              : "3"
+          }`
+        ]
+      : juniorNames[context.params.slug.slice(0, 3)][
+          `member${
+            context.params.slug.includes("A") ||
+            context.params.slug.includes("X")
+              ? "1"
+              : context.params.slug.includes("B") ||
+                context.params.slug.includes("Y")
+              ? "2"
+              : "3"
+          }`
+        ];
+
+  let x;
+
+  let teamChallengeRank;
+
+  let teamWritingRank;
+
+  let teamDebateRank;
+
+  let teamBowlRank;
+
+  let teamOverallRank;
+
+  let individualChallengeRank;
+
+  let individualWritingRank;
+
+  let individualDebateRank;
+
+  let individualOverallRank;
+
+  for (x in feedback) {
+    if (feedback[x]["ScholarID"] === context.params.slug) {
+      writingFeedback = feedback[x]["FeedbackText"];
+    }
+  }
+  if (context.params.slug.slice(0, 1) == "1") {
+    for (x in juniorTeamChallengeScoresProcessed) {
+      if (juniorTeamChallengeScoresProcessed[x]["id"] === context.params.slug.slice(0,3)) {
+        teamChallengeRank = juniorTeamChallengeScoresProcessed[x]["rank"];
+      }
+    }
+    for (x in juniorTeamWritingScoresProcessed) {
+      if (juniorTeamWritingScoresProcessed[x]["id"] === context.params.slug.slice(0,3)) {
+        teamWritingRank = juniorTeamWritingScoresProcessed[x]["rank"];
+      }
+    }
+    for (x in juniorTeamDebateScoresProcessed) {
+      if (juniorTeamDebateScoresProcessed[x]["id"] === context.params.slug.slice(0,3)) {
+        teamDebateRank = juniorTeamDebateScoresProcessed[x]["rank"];
+      }
+    }
+    for (x in juniorTeamBowlScoresProcessed) {
+      if (juniorTeamBowlScoresProcessed[x]["id"] === context.params.slug.slice(0,3)) {
+        teamBowlRank = juniorTeamBowlScoresProcessed[x]["rank"];
+      }
+    }
+    for (x in juniorTeamOverallScoresProcessed) {
+      if (juniorTeamOverallScoresProcessed[x]["id"] === context.params.slug.slice(0,3)) {
+        teamOverallRank = juniorTeamOverallScoresProcessed[x]["rank"];
+      }
+    }
+    for (x in juniorScholarChallengeScoresProcessed) {
+      if (juniorScholarChallengeScoresProcessed[x]["id"] === context.params.slug.slice(0,3)) {
+        individualChallengeRank = juniorScholarChallengeScoresProcessed[x]["rank"];
+      }
+    }
+    for (x in juniorTeamWritingScoresProcessed) {
+      if (juniorTeamWritingScoresProcessed[x]["id"] === context.params.slug.slice(0,3)) {
+        individualWritingRank = juniorTeamWritingScoresProcessed[x]["rank"];
+      }
+    }
+    for (x in juniorTeamDebateScoresProcessed) {
+      if (juniorTeamDebateScoresProcessed[x]["id"] === context.params.slug.slice(0,3)) {
+        teamDebateRank = juniorTeamDebateScoresProcessed[x]["rank"];
+      }
+    }
+    for (x in juniorTeamOverallScoresProcessed) {
+      if (juniorTeamOverallScoresProcessed[x]["id"] === context.params.slug.slice(0,3)) {
+        teamOverallRank = juniorTeamOverallScoresProcessed[x]["rank"];
+      }
+    }
+  }
+
+  console.log(teamOverallRank)
+
+  return {
+    props: { name: name, id: context.params.slug, feedback: writingFeedback }, // will be passed to the page component as props
+  };
+}
 
 export default Home;
