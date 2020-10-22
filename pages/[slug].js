@@ -609,28 +609,28 @@ export async function getServerSideProps(context) {
       }
     }
     for (x in juniorScholarChallengeScoresProcessed) {
-      if (juniorScholarChallengeScoresProcessed[x]["id"] === context.params.slug.slice(0,3)) {
+      if (juniorScholarChallengeScoresProcessed[x]["id"] === context.params.slug.slice(0,4)) {
         individualChallengeRank = juniorScholarChallengeScoresProcessed[x]["rank"];
       }
     }
-    for (x in juniorTeamWritingScoresProcessed) {
-      if (juniorTeamWritingScoresProcessed[x]["id"] === context.params.slug.slice(0,3)) {
-        individualWritingRank = juniorTeamWritingScoresProcessed[x]["rank"];
+    for (x in juniorScholarWritingScoresProcessed) {
+      if (juniorScholarWritingScoresProcessed[x]["id"] === context.params.slug.slice(0,4)) {
+        individualWritingRank = juniorScholarWritingScoresProcessed[x]["rank"];
       }
     }
-    for (x in juniorTeamDebateScoresProcessed) {
-      if (juniorTeamDebateScoresProcessed[x]["id"] === context.params.slug.slice(0,3)) {
-        teamDebateRank = juniorTeamDebateScoresProcessed[x]["rank"];
+    for (x in juniorScholarDebateScoresProcessed) {
+      if (juniorScholarDebateScoresProcessed[x]["id"] === context.params.slug.slice(0,4)) {
+        individualDebateRank = juniorScholarDebateScoresProcessed[x]["rank"];
       }
     }
-    for (x in juniorTeamOverallScoresProcessed) {
-      if (juniorTeamOverallScoresProcessed[x]["id"] === context.params.slug.slice(0,3)) {
-        teamOverallRank = juniorTeamOverallScoresProcessed[x]["rank"];
+    for (x in juniorScholarOverallScoresProcessed) {
+      if (juniorScholarOverallScoresProcessed[x]["id"] === context.params.slug.slice(0,4)) {
+        individualOverallRank = juniorScholarOverallScoresProcessed[x]["rank"];
       }
     }
   }
 
-  console.log(teamOverallRank)
+  console.log(individualOverallRank)
 
   return {
     props: { name: name, id: context.params.slug, feedback: writingFeedback }, // will be passed to the page component as props
