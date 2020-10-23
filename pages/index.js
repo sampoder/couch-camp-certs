@@ -25,12 +25,14 @@ const Home = (props) => (
     }}
   >
     <Meta />
-    <img
-      src="https://cloud-57pt0xtsf.vercel.app/0cclogo.png"
-      style={{ margin: "auto", height: "100px", marginBottom: '40px' }}
-    />
-    Hey there scholar! Please check your email to find your certificate. Thanks
-    for joining us for Couch Camp :D
+    <p>
+      <img
+        src="https://cloud-57pt0xtsf.vercel.app/0cclogo.png"
+        style={{ margin: "auto", height: "100px", marginBottom: "40px" }}
+      />
+      Hey there scholar! Please check your email to find your certificate.
+      Thanks for joining us for Couch Camp :D
+    </p>
   </div>
 );
 
