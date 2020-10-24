@@ -660,7 +660,7 @@ export async function getServerSideProps(context) {
           teamChallengeRank,
           juniorTeamChallengeScoresProcessed,
           "Team",
-          "Writing"
+          "Challenge"
         );
       }
     }
@@ -783,7 +783,7 @@ export async function getServerSideProps(context) {
           teamChallengeRank,
           seniorTeamChallengeScoresProcessed,
           "Team",
-          "Writing"
+          "Challenge"
         );
       }
     }
