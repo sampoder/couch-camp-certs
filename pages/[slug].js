@@ -548,6 +548,9 @@ export async function getServerSideProps(context) {
   let awards = [];
   let daScholarsID = `${Math.sqrt(context.params.slug.slice(0, context.params.slug.length -1)/ 7)}${context.params.slug.slice(context.params.slug.length -1, 1000)}`
   console.log(daScholarsID)
+  if(daScholarsID.length > 4){
+    daScholarsID = 122222222AAA
+  }
   function addAward(rank, array, type, event) {
     if (rank <= 3) {
       awards.push({
