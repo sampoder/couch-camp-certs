@@ -391,7 +391,6 @@ const awards1 = [
 const Home = (props, context) => (
   <>
     <div style={{ minHeight: "100vh" }} className="hideOnMobile">
-      <Meta />
       <Head>
         <title>{props.id} - Couch Camp</title>
       </Head>
