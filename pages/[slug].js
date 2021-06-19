@@ -391,7 +391,6 @@ const awards1 = [
 const Home = (props, context) => (
   <>
     <div style={{ minHeight: "100vh" }} className="hideOnMobile">
-      <Meta />
       <Head>
         <title>{props.id} - Couch Camp</title>
       </Head>
@@ -548,6 +547,9 @@ export async function getServerSideProps(context) {
   let awards = [];
   let daScholarsID = `${Math.sqrt(context.params.slug.slice(0, context.params.slug.length -1)/ 7)}${context.params.slug.slice(context.params.slug.length -1, 1000)}`
   console.log(daScholarsID)
+  if(daScholarsID.length > 4){
+    daScholarsID = '422222222AAA'
+  }
   function addAward(rank, array, type, event) {
     if (rank <= 3) {
       awards.push({
@@ -657,7 +659,7 @@ export async function getServerSideProps(context) {
           teamChallengeRank,
           juniorTeamChallengeScoresProcessed,
           "Team",
-          "Writing"
+          "Challenge"
         );
       }
     }
@@ -780,7 +782,7 @@ export async function getServerSideProps(context) {
           teamChallengeRank,
           seniorTeamChallengeScoresProcessed,
           "Team",
-          "Writing"
+          "Challenge"
         );
       }
     }
